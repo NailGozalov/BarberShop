@@ -14,8 +14,8 @@ btn_mission.addEventListener('click', function(){
     about_us_text.style = "display: none;" 
 
     btn_mission.style = "background-color: #bb9d52;color: white;"
-    btn_why.style = "background-color: transparent; color: black;"  
-    btn_about.style = "background-color: transparent; color: black;" 
+    btn_why.style = ""  
+    btn_about.style = "" 
 
 })
 
@@ -24,9 +24,9 @@ btn_why.addEventListener('click', function(){
     why_us_text.style = "display: block;"
     about_us_text.style = "display: none;" 
 
-    btn_mission.style = "background-color: transparent;color: black;"
+    btn_mission.style = ""
     btn_why.style = "background-color: #bb9d52; color: white;"  
-    btn_about.style = "background-color: transparent; color: black;"   
+    btn_about.style = ""   
 })
 
 btn_about.addEventListener('click', function(){
@@ -34,7 +34,22 @@ btn_about.addEventListener('click', function(){
     why_us_text.style = "display: none;"
     about_us_text.style = "display: block;"    
 
-    btn_mission.style = "background-color: transparent; color: black;"
-    btn_why.style = "background-color: transparent; color: black;"  
+    btn_mission.style = ""
+    btn_why.style = ""  
     btn_about.style = "background-color: #bb9d52;color: white;" 
 })
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}

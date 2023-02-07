@@ -4,9 +4,34 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: rgb(241, 241, 241);
+}
 
 .allHeader{
     margin-left: 100px;
+}
+
+
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color:#bb9d52;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 25px;
+}
+
+#myBtn:hover {
+    background-color: rgb(0, 0, 0);
 }
 
 
@@ -27,16 +52,25 @@
     color: white;
     text-align: center;
     padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu_choose{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin: 5px 0;
+    padding: 10px;
+    transition: 0.3s ease-in-out;
+    border-radius: 10px;
+    padding: 7px 0;
+
 }
 
 .logo_img{
     width: 100%;
-}
-
-.menu>p{
-    margin-top: 20px;
-    font-size: 20px;
-    transition: 0.3s ease-in-out;
+    margin-bottom: 20px;
 }
 
 .select{
@@ -45,9 +79,8 @@
     border-radius: 10px;
 }
 
-.menu>p:hover{
+.menu_choose:hover{
     background-color: #bb9d52;
-    padding: 7px 0;
     border-radius: 10px;
 }
 
@@ -56,8 +89,8 @@
 
 
 .slider_area{
-    height: 100vh;
-    background-image: url(/uploads/barber_slider.jpg);
+    height: 80vh;
+    background-image: url(../uploads/barber_all.jpg);
     background-position: 114px 0px;
     background-attachment: fixed;
     background-size: cover;
@@ -72,7 +105,7 @@
     color: #fff;
     text-align: center;
     padding: 50px;  
-  }
+}
 
 .slider_area:after {
     content: '';
@@ -81,9 +114,9 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0,0,0,.5);
+    background: rgba(0, 0, 0, 0.658);
     z-index: 2;
-  }
+}
 
 .slider_body>h1{
     font-size: 70px;
@@ -92,9 +125,9 @@
 
 .slider_h2{
     font-size: 50px;
-    margin-top: 200px;
+    margin-top: 100px;
     margin-left: 190px;
-    font-weight: 100;
+    font-weight: 900;
 }
 
 .content{
@@ -157,11 +190,30 @@
     margin-top: 50px;
     margin-left: 190px;
     font-weight: 100;
+    font-size: 17px;
     width: 55%;
     display: inline-block;
     justify-content: center;
     align-items: center;
 }
+
+.header_link1{
+    color: white;
+    text-decoration: none;
+}
+
+.header_link2{
+    color: #bb9d52;
+    text-decoration: none;
+    display: inline;
+}
+
+.mustache{
+    display: block;
+    margin-left: 180px;
+    margin-top: 40px;
+}
+
 
 
 .btn:link,
@@ -173,6 +225,7 @@
     border-radius: 10px;
     transition: all .2s;
     margin-left: 190px;
+    margin-top: 60px;
 }
 
 .btn:hover {
@@ -231,10 +284,9 @@
 
 
 
+
 .all_content{
     padding: 50px 10px 30px 320px;
-
-
 }
 
 .about_section{
@@ -246,7 +298,7 @@
 
 .about_section>h2{
     margin: 20px 0;
-    font-size: 70px;
+    font-size: 50px;
 }
 
 .about_section>h4{
@@ -274,7 +326,6 @@
 .btn_learn{
     display: block;
     margin-right: 200px;
-    margin-top: 30px;
 }
 
 .our_mission{
@@ -348,3 +399,182 @@
     margin: 10px 8px 10px 20px;
     font-size: 14px; 
 }
+
+
+.our_barbers{
+    text-align: center;
+}
+
+.our_barbers>h3{
+    font-size: 17px;
+    margin: 20px 0;
+    font-weight: 200;
+}
+
+.our_barbers>h2{
+    margin: 20px 0 30px 0;
+    font-size: 40px;
+}
+.our_barbers>h4{
+    font-size: 17px;
+    color: gray;
+    width: 60%;
+    display: inline-block;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.barbers{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 30% 30% 30%;
+    margin-top: 30px;
+    gap: 20px;
+
+}
+
+.barber{
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.barber_photo{
+    width: 100%;
+    object-fit: contain;
+    position: relative;
+}
+
+.barber>h2{
+    color: rgb(51, 51, 51);
+    font-weight: 500;
+}
+
+.barber>h3{
+    margin-top: 10px;
+    color: gray;
+    font-weight: 300;
+    margin: 10px 15px 30px 15px;
+}
+
+.barber>h4{
+    margin: 10px;
+    color: gray;
+    font-weight: 500;
+}
+
+
+.photo1{
+    position: relative;
+    overflow: hidden;
+}
+
+.drodown_info{
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: none;
+    opacity: 1;
+    transition: all 500ms ease;
+    background: -moz-linear-gradient(top,rgba(255,255,255,0) 0%,rgba(254,254,253,0) 1%,rgba(188,158,84,1) 99%,rgba(187,157,82,1) 100%);
+    background: -webkit-linear-gradient(top,rgba(255,255,255,0) 0%,rgba(254,254,253,0) 1%,rgba(188,158,84,1) 99%,rgba(187,157,82,1) 100%);
+    background: linear-gradient(to bottom,rgba(255,255,255,0) 0%,rgba(254,254,253,0) 1%,rgba(188,158,84,1) 99%,rgba(187,157,82,1) 100%);
+
+}
+
+.barber:hover .drodown_info{
+    top: 0;
+}
+
+.fb_icon{
+    position: absolute;
+    bottom: 20px;
+    left: 100px;
+    font-size: 30px;
+    color: black;
+}
+
+.insta_icon{
+    position: absolute;
+    bottom: 20px;
+    left: 160px;
+    font-size: 30px;
+    color: black;
+
+}
+.linkedin_icon{
+    position: absolute;
+    bottom: 20px;
+    left: 220px;
+    font-size: 30px;
+    color: black;
+}
+
+.drodown_info>a{
+    text-decoration: none;
+}
+
+
+
+
+
+
+.materials{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 32% 32% 32%;
+    margin-top: 30px;
+    gap: 20px;
+    text-align: center;
+}
+
+.mat_section>img{
+    width: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.mat_section>h2{
+    font-weight: 100;
+    margin: 10px 0;
+    color: rgb(72, 72, 72);
+
+}
+
+.mat_section>h3{
+    font-weight: 100;
+    color: gray;
+}
+
+
+
+
+
+
+
+footer{
+    padding: 50px 0 0 300px;
+}
+
+.foot_box{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(31, 31, 31);
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foot_box>h2{
+    font-size: 20px;
+}
+
+
+
+
+
+
