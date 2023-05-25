@@ -1,0 +1,426 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(241, 241, 241);
+}
+
+.allHeader{
+    margin-left: 100px;
+}
+
+
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color:#bb9d52;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 25px;
+}
+
+#myBtn:hover {
+    background-color: rgb(0, 0, 0);
+}
+
+
+.leftbarmenu{
+    width: 20%;
+    height: 100vh;
+    background-color: black;
+    padding: 10px;
+    position: fixed;
+    z-index: 1000;
+    position: fixed;
+    left: 0;
+    overflow-y: auto;
+}
+
+.menu{
+    margin-top: 70%;
+    color: white;
+    text-align: center;
+    padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu_choose{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin: 5px 0;
+    padding: 10px;
+    transition: 0.3s ease-in-out;
+    border-radius: 10px;
+    padding: 7px 0;
+
+}
+
+.logo_img{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.select{
+    background-color: #bb9d52;
+    padding: 7px 0;
+    border-radius: 10px;
+}
+
+.menu_choose:hover{
+    background-color: #bb9d52;
+    border-radius: 10px;
+}
+
+
+
+
+
+.slider_area{
+    height: 80vh;
+    background-image: url(../uploads/barber_all.jpg);
+    background-position: 114px 0px;
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 90px;
+}
+
+.inner {
+    position: relative;
+    z-index: 3;
+    color: #fff;
+    text-align: center;
+    padding: 50px;  
+}
+
+.slider_area:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.658);
+    z-index: 2;
+}
+
+.slider_body>h1{
+    font-size: 70px;
+    margin-top: 100px;
+}
+
+.slider_h2{
+    font-size: 50px;
+    margin-top: 100px;
+    margin-left: 190px;
+    font-weight: 900;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.content>h2 {
+    color: #fff;
+    font-size: 5em;
+    position: absolute;
+    transform: translate(40%, 50%);
+    margin-right: 220px;
+  }
+  
+  .content h2:nth-child(1) {
+    color: transparent;
+    -webkit-text-stroke: 2px #bb9d52;
+  }
+  
+  .content h2:nth-child(2) {
+    color: #bb9d52;
+    animation: animate 4s ease-in-out infinite;
+  }
+  
+  @keyframes animate {
+    0%,
+    100% {
+      clip-path: polygon(
+        0% 45%,
+        16% 44%,
+        33% 50%,
+        54% 60%,
+        70% 61%,
+        84% 59%,
+        100% 52%,
+        100% 100%,
+        0% 100%
+      );
+    }
+  
+    50% {
+      clip-path: polygon(
+        0% 60%,
+        15% 65%,
+        34% 66%,
+        51% 62%,
+        67% 50%,
+        84% 45%,
+        100% 46%,
+        100% 100%,
+        0% 100%
+      );
+    }
+  }
+
+.slider_text{
+    margin-top: 50px;
+    margin-left: 190px;
+    font-weight: 100;
+    font-size: 17px;
+    width: 55%;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_link1{
+    color: white;
+    text-decoration: none;
+}
+
+.header_link2{
+    color: #bb9d52;
+    text-decoration: none;
+    display: inline;
+}
+
+.mustache{
+    display: block;
+    margin-left: 180px;
+    margin-top: 40px;
+}
+
+
+
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 10px;
+    transition: all .2s;
+    margin-left: 190px;
+    margin-top: 60px;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-white {
+    background-color: #bb9d52;
+    color: rgb(255, 255, 255);
+}
+
+.btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.btn-white::after {
+    background-color: #000000;
+}
+
+.btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.btn-animated {
+    animation: moveInBottom 5s ease-out;
+    animation-fill-mode: backwards;
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+
+
+/* -------------------Main----------------- */
+
+.all_content{
+    padding: 50px 10px 30px 320px;
+}
+
+.our_services_section{
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+}
+
+.welcome h3{
+    margin: 10px;
+    color: gray;
+}
+
+.welcome h2{
+    font-size: 30px;
+    margin-top: 20px;
+
+}
+
+.hr{
+    width: 100px;
+    margin: 20px auto 30px;
+    padding: 1px;
+    background-color: #111;
+    text-align: center;
+}
+
+.par1{
+    width: 55%;
+    display: inline-block;
+    justify-content: center;
+    
+}
+
+.par1 p{
+    font-size: 20px;
+    color: gray;
+    display: inline-block;
+    justify-content: center;
+    margin: 5px 0 15px 0;
+}
+
+.services_grid{
+    margin: 20px;
+    display: grid;
+    gap: 30px;
+    grid-template-areas: 
+    "head head"
+    "center center"
+    "foot foot"
+    ;
+}
+
+.serv_box{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    transition: ease-in-out 1s;
+}
+
+.serv_box:hover{
+    transform: scale(1.05)
+}
+
+.serv_img img{
+    width: 80%;
+    border-radius: 7px;    
+}
+
+.serv_left{
+    width: 70%;
+}
+
+
+.serv_right h2{
+    text-align: left;  
+    margin: 0 10px;  
+}
+
+.serv_right h3{
+    width: 90%;
+    line-height: 20px;
+    font-size: 15px;
+    color: gray;
+    margin: 10px 10px;
+    font-weight: 100;
+    letter-spacing: 0.5px;
+    text-align: left;
+}
+
+.serv_btn{
+    position: relative;
+    translate: -50px;
+    right: 40px;
+    width: 30%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    padding: 50px 0 0 300px;
+}
+
+.foot_box{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(31, 31, 31);
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foot_box>h2{
+    font-size: 20px;
+}
+
+
+
+
+
+
