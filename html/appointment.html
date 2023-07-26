@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/css/appointment.css">
+    <script src="https://kit.fontawesome.com/fd16f8a5c5.js" crossorigin="anonymous"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <title>Qəbul</title>
+</head>
+<body>
+
+    <div class="parent">
+
+        <div class="leftbarmenu">
+            <div class="menu">
+                <a href="../index.html"><img class="logo_img" src="../src/img/Eyzamoğlu.jpg" alt="Logo" title="Logo"></a>
+                <a href="../index.html" class="menu_choose">Ana səhifə</a>
+                <a href="./about.html" class="menu_choose">Haqqımızda</a>
+                <a href="./services.html" class="menu_choose">Xidmətlərimiz</a>
+                <a href="./barbers.html" class="menu_choose">Bərbərlərimiz</a>
+                <a href="./appointment.html" class="select menu_choose">Qəbula yazıl</a>
+                <a href="./contact.html" class="menu_choose">Əlaqə</a>
+            </div>
+        </div>
+
+        <div class="all">
+
+            <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-hand-point-up"></i></button>
+
+
+            <header>
+                <div class="allHeader">
+                    <div class="slider_area slider_bg inner">
+                        <div class="slider_body inner">                     
+                            <h2 class="slider_h2">Qəbula yazıl</h2>
+                            <h2 class="slider_text"><a class="header_link1" href="../index.html">Ana səhifə</a> &nbsp;/&nbsp; <p class="header_link2">Qəbula yazıl</p></h2>
+                            <div class="mustache">
+                                <img src="../src/uploads/mustache.png" alt="Mustache" title="Mustache">
+                            </div>
+                        </div>
+                                        
+            
+                    </div>
+    
+                </div>
+
+            </header>
+
+
+            <main>
+
+                <div class="all_content">
+                    <div class="appointment">
+    
+                        <h3>Gələcəyinizi bizə öncədən bildirə bilərsiniz</h3>
+                        <h2>Qəbula yazıl</h2>
+                        <hr class="hr">
+                        <h4>Quisque eget nisl id nulla sagittis auctor quis id. Aliquam quis vehicula enim, non aliquam risus. Sed a tellus quis mi rhoncus dignissim.</h4>
+                        <br>
+                        
+                    </div>
+
+                    <div class="center">
+                        <div class="oppening_time">
+                            <h2>İş saatları</h2>
+                            <h3>Bazar ertəsi ...........................................12:00-22:00</h3>
+                            <h3>Çərşənbə ...............................................12:00-22:00</h3>
+                            <h3>Çərşənbə axşamı ..................................12:00-22:00</h3>
+                            <h3>Cümə axşamı ........................................12:00-22:00</h3>
+                            <h3>Cümə .....................................................12:00-23:30</h3>
+                            <h3>Şənbə .....................................................12:00-23:30</h3>
+                            <h3>Bazar .....................................................12:00-22:00</h3>
+                        </div>
+
+                        <div class="appontment_time">
+                            <form class="appointment_form" id="contactForm">
+                                <div class="first_line">
+                                    <input type="text" placeholder="Adınız" id="name" class="app_input _req name">
+                                    <input type="text" placeholder="Soyadınız" id="surname" class="app_input _req">
+                                </div>
+
+                                <div class="second_line">
+                                    <input type="email" placeholder="E-mail ünvanınız" id="email" class="email app_input _req" >
+                                    <input type="tel" placeholder="Telefon" id="phone" class="app_input _req" >
+                                
+
+                                <div class="third_line">
+                                    <input type="date" class="app_input _req">
+                                    <input type="time" class="app_input _req">
+                                </div>
+
+                                <div class="fourth_line">
+                                    <input type="text" id="textarea" placeholder="Əlavə qeydlər..." class="textarea message">                                    
+                                </div>
+
+                                
+                                <button id="btnn" type="submit" class="submit_btn">Göndər</button>
+                                
+
+                            </form>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+           
+            </main>
+
+
+            <footer>
+                <div class="foot_box">
+                    <h2>Bütün hüquqlar qorunur © 2023 By Eyzamoğlu. Powered by Nail Gozalov</h2>
+                </div>
+
+
+            </footer>
+
+
+        </div>
+
+    </div>
+
+    
+
+
+    <script src="../src/js/main.js"></script>
+    <script src="../src/js/services.js"></script>
+    <script src="../src/js/mailer.js"></script>
+    
+    
+</body>
+</html>

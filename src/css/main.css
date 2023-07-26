@@ -46,7 +46,7 @@ body{
 }
 
 .menu{
-    margin-top: 70%;
+    margin-top: 30%;
     color: white;
     text-align: center;
     padding: 0 30px;
@@ -72,13 +72,13 @@ body{
 }
 
 .select{
-    background-color: #bb9d52;
+    background-color: #d4be84;
     padding: 7px 0;
     border-radius: 10px;
 }
 
 .menu_choose:hover{
-    background-color: #bb9d52;
+    background-color: #d4be84;
     border-radius: 10px;
 }
 
@@ -117,12 +117,7 @@ body{
     margin-top: 100px;
 }
 
-.slider_h2{
-    font-size: 50px;
-    margin-top: 200px;
-    margin-left: 190px;
-    font-weight: 100;
-}
+
 
 .content{
     display: flex;
@@ -181,7 +176,7 @@ body{
   }
 
 .slider_text{
-    margin-top: 50px;
+    margin-top: 250px;
     margin-left: 190px;
     font-weight: 100;
     width: 55%;
@@ -200,6 +195,12 @@ body{
     border-radius: 10px;
     transition: all .2s;
     margin-left: 190px;
+}
+
+.show_barbers{
+    display: flex;
+    justify-content: center;
+    margin-left: 120px;
 }
 
 .btn:hover {
@@ -510,5 +511,6 @@ footer{
 }
 
 .foot_box>h2{
-    font-size: 20px;
+    font-size: 15px;
+    letter-spacing: 1px;
 }

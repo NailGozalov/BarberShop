@@ -215,61 +215,6 @@ body{
 }
 
 
-
-.btn:link,
-.btn:visited {
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 15px 40px;
-    display: inline-block;
-    border-radius: 10px;
-    transition: all .2s;
-    margin-left: 190px;
-    margin-top: 60px;
-}
-
-.btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-
-.btn:active {
-    transform: translateY(-1px);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-}
-
-.btn-white {
-    background-color: #bb9d52;
-    color: rgb(255, 255, 255);
-}
-
-.btn::after {
-    content: "";
-    display: inline-block;
-    height: 100%;
-    width: 100%;
-    border-radius: 10px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    transition: all .4s;
-}
-
-.btn-white::after {
-    background-color: #000000;
-}
-
-.btn:hover::after {
-    transform: scaleX(1.4) scaleY(1.6);
-    opacity: 0;
-}
-
-.btn-animated {
-    animation: moveInBottom 5s ease-out;
-    animation-fill-mode: backwards;
-}
-
 @keyframes moveInBottom {
     0% {
         opacity: 0;
@@ -290,21 +235,21 @@ body{
     padding: 50px 10px 30px 320px;
 }
 
-.our_services_section{
+
+
+.appointment{
     text-align: center;
-    margin-bottom: 30px;
-    padding-bottom: 30px;
 }
 
-.welcome h3{
-    margin: 10px;
-    color: gray;
+.appointment>h3{
+    font-size: 17px;
+    margin: 20px 0;
+    font-weight: 200;
 }
 
-.welcome h2{
-    font-size: 30px;
-    margin-top: 20px;
-
+.appointment>h2{
+    margin: 20px 0 30px 0;
+    font-size: 40px;
 }
 
 .hr{
@@ -315,80 +260,136 @@ body{
     text-align: center;
 }
 
-.par1{
-    width: 55%;
+.appointment>h4{
+    font-size: 17px;
+    color: gray;
+    width: 60%;
     display: inline-block;
     justify-content: center;
+    margin-bottom: 50px;
+}
+
+
+.center{
+    display: flex;
+    justify-content: center;
+}
+.map{
+    display: flex;
+    justify-content: center;
+}
+
+
+.contact_info{
+    text-align: center;
+
+}
+
+.contact_info>h3{
+    font-size: 17px;
+    margin: 20px 0;
+    font-weight: 200;
+}
+
+.contact_info>h2{
+    margin: 20px 0 30px 0;
+    font-size: 40px;
+}
+
+
+
+.contact_info>h4{
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    width: 60%;
+    display: inline-block;
+    justify-content: center;
+    margin-bottom: 50px;
+    line-height: 50px;
+}
+
+
+.appontment_time{
+    background-color: rgb(0, 0, 0);
+    padding: 20px; 
+    width: 50%;
+    margin: 30px;
+    border-radius: 20px;
     
 }
 
-.par1 p{
-    font-size: 20px;
-    color: gray;
-    display: inline-block;
-    justify-content: center;
-    margin: 5px 0 15px 0;
+.appointment_form{
+    text-align: center;
+    position:relative;
+    
 }
 
-.services_grid{
-    margin: 20px;
-    display: grid;
-    gap: 30px;
-    grid-template-areas: 
-    "head head"
-    "center center"
-    "foot foot"
-    ;
+.appointment_form::after{
+    content: "";
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(51, 51, 51, 0.9);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease 0s;
+    background: url("../img/ajax-loader.gif") center / 50px no-repeat;
 }
 
-.serv_box{
-    display: flex;
-    align-items: center;
-    background-color: white;
+.appointment_form._sending::after{
+    opacity: 1;
+    visibility: visible;
+}
+
+.app_input{
+    width: 45%;
+    height: 40px;
+    margin: 5px;
     padding: 10px;
-    border-radius: 10px;
-    padding: 10px;
-    transition: ease-in-out 1s;
-}
-
-.serv_box:hover{
-    transform: scale(1.05)
-}
-
-.serv_img img{
-    width: 80%;
-    border-radius: 7px;    
-}
-
-.serv_left{
-    width: 70%;
-}
-
-
-.serv_right h2{
-    text-align: left;  
-    margin: 0 10px;  
-}
-
-.serv_right h3{
-    width: 90%;
-    line-height: 20px;
     font-size: 15px;
-    color: gray;
-    margin: 10px 10px;
-    font-weight: 100;
-    letter-spacing: 0.5px;
-    text-align: left;
+    outline: none;
 }
-
-.serv_btn{
-    position: relative;
-    translate: -50px;
-    right: 40px;
-    width: 30%;
+.app_input:focus{
+    box-shadow: 0 0 15px rgb(199, 199, 199);
+    border: none;
 }
 
 
+.textarea{
+    width: 92.9%;
+    height: 200px;
+    margin: 5px;
+    padding: 10px;
+    font-size: 15px;
+    outline: none;
+    border: none;
+}
+
+.textarea:focus{
+    box-shadow: 0 0 15px rgb(199, 199, 199);
+}
+
+.submit_btn{
+    width: 50%;
+    height: 50px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    outline: none;
+    border: none;
+    margin: 20px 10px 10px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+    
+}
+
+.submit_btn:hover{
+    background-color: #bb9d52;
+    color: white;
+}
 
 
 
@@ -397,7 +398,7 @@ body{
 
 
 
-
+/* -------------------Footer----------------- */
 
 
 footer{
@@ -419,6 +420,7 @@ footer{
     font-size: 15px;
     letter-spacing: 1px;
 }
+
 
 
 

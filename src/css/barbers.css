@@ -48,7 +48,7 @@ body{
 }
 
 .menu{
-    margin-top: 70%;
+    margin-top: 30%;
     color: white;
     text-align: center;
     padding: 0 30px;
@@ -394,6 +394,7 @@ body{
     left: 100px;
     font-size: 30px;
     color: black;
+    transition: all .3s;
 }
 
 .insta_icon{
@@ -402,6 +403,7 @@ body{
     left: 160px;
     font-size: 30px;
     color: black;
+    transition: all .3s;
 
 }
 .linkedin_icon{
@@ -410,6 +412,18 @@ body{
     left: 220px;
     font-size: 30px;
     color: black;
+    transition: all .3s;
+}
+
+.fb_icon:hover{
+    color: #1B74E4;
+}
+.linkedin_icon:hover{
+    color: #0a66c2;
+}
+
+.insta_icon:hover{
+    color: #ffffff;
 }
 
 .drodown_info>a{
@@ -443,7 +457,8 @@ footer{
 }
 
 .foot_box>h2{
-    font-size: 20px;
+    font-size: 15px;
+    letter-spacing: 1px;
 }
 
 
